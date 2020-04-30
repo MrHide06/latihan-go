@@ -30,6 +30,6 @@ func main() {
 		fmt.Print("Warna Sepeda = ", i.warna, "\n")
 		fmt.Print("Jumlah Ban Sepeda = ", i.ban, "\n")
 		fmt.Print("Jumlah Gear di sepeda = ", i.gear, "\n")
-		fmt.Print("Sepeda ini apabila menempuh jarak 20 km akan menghabiskan waktu sekitar ",i.waktu(20), "menit\n")
+		fmt.Print("20 Km waktu tempuh nya adalah ",i.waktu(20), "menit\n")
 	}
 }
