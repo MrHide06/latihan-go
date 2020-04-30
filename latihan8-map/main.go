@@ -19,7 +19,7 @@ func main () {
 	fmt.Print("Berikut ini adalah produk yang sudah mau habis :\n")
 	for _, i := range toko{
 		if i.stockBarang < 10 {
-			fmt.Print(index ,i.namaBarang, "\n")
+			fmt.Print("-" ,i.namaBarang, "\n")
 		}
 	}
 }
