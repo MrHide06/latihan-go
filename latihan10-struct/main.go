@@ -15,13 +15,13 @@ func (sepeda *Sepeda) waktu(menit float32) float32{
 }
 
 func main() {
-	data := make(map[int]Sepeda)
-
-	data[0] = Sepeda{ban: 2, gear: 6, warna: "Putih"}
-	data[1] = Sepeda{ban: 2, gear: 5, warna: "Merah"}
-	data[2] = Sepeda{ban: 1, gear: 1, warna: "Hitam"}
-	data[3] = Sepeda{ban: 3, gear: 1, warna: "Pink"}
-	data[4] = Sepeda{ban: 4, gear: 2, warna: "Ungu"}
+	data := [...]Sepeda{
+		Sepeda{ban: 2, gear: 6, warna: "Putih"},
+		Sepeda{ban: 2, gear: 5, warna: "Merah"},
+		Sepeda{ban: 1, gear: 1, warna: "Hitam"},
+		Sepeda{ban: 3, gear: 1, warna: "Pink"},
+		Sepeda{ban: 4, gear: 2, warna: "Ungu"},
+	}
 
 	fmt.Print("Berikut ini adalah data beberapa sepeda\n")
 
