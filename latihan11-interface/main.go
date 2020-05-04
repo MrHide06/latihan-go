@@ -1,12 +1,13 @@
 package main
 
 import (
-	"github.com/MrHide06/latihan-go/latihan11-interface/model"
+	"github.com/MrHide06/latihan-go/latihan11-interface/sepeda"
+	"github.com/MrHide06/latihan-go/latihan11-interface/motor"
 )
 
 
 func main() {
-	model.Bike()
-	model.Vehicle()
+	sepeda.Bike()
+	motor.Vehicle()
 
 }

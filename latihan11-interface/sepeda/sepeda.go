@@ -1,4 +1,4 @@
-package model
+package sepeda
 
 import "fmt"
 
@@ -19,15 +19,15 @@ func (sepeda *Sepeda) waktu(speed float32) float32{
 	return waktuTempuh
 }
 
-// func (s Sepeda) Cepat(move float32) float32 {
-// 	fast := (move * 2.0) * 50.0
-// 	return fast
-// }
+func (s Sepeda) Cepat(move float32) float32 {
+	fast := (move * 2.0) * 50.0
+	return fast
+}
 
-// func (s Sepeda) Lambat(move float32) float32 {
-// 	slow := (move / 2.0) * 50.0
-// 	return slow
-// }
+func (s Sepeda) Lambat(move float32) float32 {
+	slow := (move / 2.0) * 50.0
+	return slow
+}
 
 func Bike() {
 	data := make(map[int]Sepeda)
