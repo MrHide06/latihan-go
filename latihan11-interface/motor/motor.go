@@ -2,16 +2,11 @@ package motor
 
 import "fmt"
 
-type Maju interface {
-	Cepat()
-	Lambat()
-}
 
 type Motor struct {
 	Ban, Gear int
 	Kecepatan float32
 	Jenis     string
-	Maju
 }
 
 

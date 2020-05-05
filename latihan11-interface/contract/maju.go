@@ -1,6 +1,6 @@
 package contract
 
-type Maju interface{
-	Cepat()
-	Lambat()
-}
+// type Maju interface{
+// 	Cepat()
+// 	Lambat()
+// }

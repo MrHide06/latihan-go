@@ -1,15 +1,10 @@
 package main
 
 import(
-	"fmt"
-	"github.com/MrHide06/latihan12-interface/item"
+	"github.com/MrHide06/latihan12-interface/user"
 )
 
-type User struct{
-	ID int
-	Username, Fullname, Email, Password string
-}
 
-func(u *User) Beli()(int, string){
-	buy := new(item)
+func main(){
+	user.CreateUser()
 }
