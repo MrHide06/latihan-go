@@ -21,3 +21,13 @@ func(store *ArticleStoreInMemory) Save(article *Article)error{
 
 	return nil
 }
+
+func(store *ArticleStoreInMemory) Delete(id int)error{
+	store.ArticleMap = append(store.ArticleMap[:id - 1], store.ArticleMap[id:]...)
+	return nil
+}
+
+func (store *ArticleStoreInMemory) Edit(title, body string, id int)error{
+	store.ArticleMap[id - 1] = Article{ID: id, Title: title, Body: body}
+	return nil
+}

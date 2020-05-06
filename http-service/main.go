@@ -39,18 +39,15 @@ func main(){
 		title := c.FormValue("Title")
 		body := c.FormValue("Body")
 		id, _ := strconv.Atoi(c.Param("id"))
-		articles := store.ArticleMap
-
-		articles[id - 1] = model.Article{ID: id, Title:title, Body: body}
+		articles := store.Edit(title, body, id)
 
 		return c.JSON(http.StatusOK, articles)
 	})
 
 	e.DELETE("/articles/:id", func(c echo.Context)error{
 		id, _ := strconv.Atoi(c.Param("id"))
-		articles := store.ArticleMap
 
-		articles = append(articles[:id - 1], articles[id:]...)
+		articles := store.Delete(id)
 		
 		return c.JSON(http.StatusOK, articles)
 	})
